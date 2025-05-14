@@ -1,0 +1,10 @@
+$example-variable: #fff;
+$example-variable2: red;
+
+body {
+  background-color: $example-variable;
+}
+
+h1 {
+  color: $example-variable2;
+}
