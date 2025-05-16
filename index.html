@@ -1,44 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filme Favorito</title>
-    <link rel="stylesheet" href="dist/css/main.css">
+  <meta charset="UTF-8">
+  <title>A Era do Gelo 3</title>
+  <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <header class="header"></header>
+  <header class="header">
         <div class="header__container">
-            <h1 class="header__title">O Senhor dos Anéis</h1>
-            <p class="header__subtitle">Uma jornada épica pela Terra Média</p>
+            <a href="#" class="header__logo">
+                <span class="header__logo-icon">❄️</span>
+                Era do Gelo
+            </a>
+            <button class="header__menu-button" id="menuButton">☰</button>
+            <nav class="header__nav" id="nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Início</a></li>
+                    <li class="header__nav-item"><a href="#characters" class="header__nav-link">Personagens</a></li>
+                    <li class="header__nav-item"><a href="#gallery" class="header__nav-link">Galeria</a></li>
+                    <li class="header__nav-item"><a href="#about" class="header__nav-link">Sobre</a></li>
+                    <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="main-content">
-        <section class="main-content__section main-content__section--highlight">
-            <h2 class="main-content__title">Sobre a Trilogia</h2>
-            <p class="main-content__text">
-                "O Senhor dos Anéis" é uma das maiores obras de fantasia já criadas, escrita por J.R.R. Tolkien.
-                A história segue a jornada de Frodo Bolseiro para destruir o Um Anel e salvar a Terra Média.
-            </p>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title">Bem-vindo à Era do Gelo</h1>
+            <p class="hero__subtitle">Uma aventura glacial cheia de diversão, amizade e descobertas</p>
+            <a href="#" class="hero__cta">Conheça os Personagens</a>
+        </div>
+    </section>
 
-        <section class="main-content__section">
-            <h2 class="main-content__title">Personagens Principais</h2>
-            <ul class="main-content__list">
-                <li class="main-content__list-item">Frodo Bolseiro</li>
-                <li class="main-content__list-item">Gandalf</li>
-                <li class="main-content__list-item">Aragorn</li>
-                <li class="main-content__list-item">Legolas</li>
-                <li class="main-content__list-item">Gimli</li>
-            </ul>
-        </section>
-    </main>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features__container">
+            <h2 class="features__title">Descubra a Era do Gelo</h2>
+            <div class="features__grid">
+                <div class="feature">
+                    <div class="feature__icon">🌨️</div>
+                    <h3 class="feature__title">Mundo Gelado</h3>
+                    <p class="feature__description">Explore paisagens congeladas repletas de aventuras e descubra os mistérios desta era glacial.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">🦣</div>
+                    <h3 class="feature__title">Animais Pré-históricos</h3>
+                    <p class="feature__description">Conheça mamutes, tigres dente-de-sabre e preguiças gigantes que viveram neste período.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">👨‍👩‍👧‍👦</div>
+                    <h3 class="feature__title">Amizade e Família</h3>
+                    <p class="feature__description">Acompanhe as histórias de amizade e união entre diferentes espécies em busca da sobrevivência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer">
+    <!-- Characters Section -->
+    <section class="characters" id="characters">
+        <div class="characters__container">
+            <h2 class="characters__title">Personagens Inesquecíveis</h2>
+            <div class="characters__grid">
+                <div class="character">
+                    <img src="/api/placeholder/300/200" alt="Manny" class="character__image">
+                    <div class="character__content">
+                        <h3 class="character__name">Manny</h3>
+                        <p class="character__description">O mamute mal-humorado porém de bom coração que se torna o líder do grupo improvável de amigos.</p>
+                    </div>
+                </div>
+                <div class="character">
+                    <img src="/api/placeholder/300/200" alt="Sid" class="character__image">
+                    <div class="character__content">
+                        <h3 class="character__name">Sid</h3>
+                        <p class="character__description">A preguiça falante e desajeitada que adora se meter em confusão, mas sempre mantém o otimismo.</p>
+                    </div>
+                </div>
+                <div class="character">
+                    <img src="/api/placeholder/300/200" alt="Diego" class="character__image">
+                    <div class="character__content">
+                        <h3 class="character__name">Diego</h3>
+                        <p class="character__description">O tigre dente-de-sabre inicialmente traiçoeiro que aprende o valor da amizade verdadeira.</p>
+                    </div>
+                </div>
+                <div class="character">
+                    <img src="/api/placeholder/300/200" alt="Scrat" class="character__image">
+                    <div class="character__content">
+                        <h3 class="character__name">Scrat</h3>
+                        <p class="character__description">O esquilo pré-histórico obcecado por sua bolota, cujas desventuras frequentemente causam cataclismos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="gallery__container">
+            <h2 class="gallery__title">Galeria Glacial</h2>
+            <div class="gallery__grid">
+                <div class="gallery__item">
+                    <img src="/api/placeholder/400/300" alt="Cena da Era do Gelo" class="gallery__image">
+                </div>
+                <div class="gallery__item">
+                    <img src="/api/placeholder/400/300" alt="Cena da Era do Gelo" class="gallery__image">
+                </div>
+                <div class="gallery__item">
+                    <img src="/api/placeholder/400/300" alt="Cena da Era do Gelo" class="gallery__image">
+                </div>
+                <div class="gallery__item">
+                    <img src="/api/placeholder/400/300" alt="Cena da Era do Gelo" class="gallery__image">
+                </div>
+                <div class="gallery__item">
+                    <img src="/api/placeholder/400/300" alt="Cena da Era do Gelo" class="gallery__image">
+                </div>
+                <div class="gallery__item">
+                    <img src="/api/placeholder/400/300" alt="Cena da Era do Gelo" class="gallery__image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="features" id="about">
+        <div class="features__container">
+            <h2 class="features__title">Sobre a Era do Gelo</h2>
+            <div class="features__grid">
+                <div class="feature">
+                    <div class="feature__icon">🧊</div>
+                    <h3 class="feature__title">O Período Glacial</h3>
+                    <p class="feature__description">A Era do Gelo foi um período de longa duração quando a temperatura da Terra diminuiu e grandes áreas foram cobertas por gelo.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">🎬</div>
+                    <h3 class="feature__title">A Franquia</h3>
+                    <p class="feature__description">A série de filmes animados "A Era do Gelo" conquistou o mundo com suas histórias divertidas e personagens cativantes.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon">🦴</div>
+                    <h3 class="feature__title">Fauna e Flora</h3>
+                    <p class="feature__description">Descubra os animais e plantas que conseguiram sobreviver neste ambiente extremamente hostil e desafiador.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-section__container">
+            <h2 class="cta-section__title">Embarque Nesta Aventura Glacial</h2>
+            <p class="cta-section__description">Junte-se a Manny, Sid, Diego e toda a turma em uma jornada inesquecível através da Era do Gelo. Diversão garantida para toda a família!</p>
+            <a href="#" class="cta-section__button">Assistir Agora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
         <div class="footer__container">
-            <p class="footer__text">© 2023 - Todos os direitos reservados</p>
+            <div class="footer__section">
+                <h3 class="footer__title">Era do Gelo</h3>
+                <p>Uma aventura congelante cheia de amizade, diversão e descobertas para toda a família.</p>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Links Rápidos</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Início</a></li>
+                    <li class="footer__item"><a href="#characters" class="footer__link">Personagens</a></li>
+                    <li class="footer__item"><a href="#gallery" class="footer__link">Galeria</a></li>
+                    <li class="footer__item"><a href="#about" class="footer__link">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Contato</h3>
+                <ul class="footer__list">
+                    <li class="footer__item">Email: contato@eradogelo.com</li>
+                    <li class="footer__item">Telefone: (11) 1234-5678</li>
+                    <li class="footer__item">Endereço: Avenida Glacial, 123</li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3 class="footer__title">Redes Sociais</h3>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">📱</a>
+                    <a href="#" class="footer__social-link">📷</a>
+                    <a href="#" class="footer__social-link">📺</a>
+                    <a href="#" class="footer__social-link">🐦</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">© 2025 Era do Gelo. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+  <script src="dist/js/script.js"></script>
 </body>
 </html>

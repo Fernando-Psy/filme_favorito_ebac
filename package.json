@@ -19,8 +19,13 @@
   },
   "homepage": "https://github.com/Fernando-Psy/filme_favorito_ebac#readme",
   "devDependencies": {
-    "gulp": "^5.0.0",
+    "browser-sync": "^3.0.4",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^6.0.1",
+    "gulp-uglify-es": "^3.0.0",
     "sass": "^1.88.0"
   }
 }

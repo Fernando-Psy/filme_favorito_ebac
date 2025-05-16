@@ -1,10 +1,73 @@
-$example-variable: #fff;
-$example-variable2: red;
+@use "./header" as *;
+@use "./footer" as *;
+@use "./base" as *;
+@use "./variables" as *;
+@use "./hero" as *;
+@use "./features" as *;
+@use "./cta" as *;
+@use "./characters" as *;
+@use "./gallery" as *;
 
-body {
-  background-color: $example-variable;
-}
 
-h1 {
-  color: $example-variable2;
-}
+@media (max-width: 768px) {
+            .header__nav {
+                position: fixed;
+                top: 60px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 60px);
+                background-color: #2c3e50;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: left 0.3s;
+            }
+
+            .header__nav.header__nav--active {
+                left: 0;
+            }
+
+            .header__nav-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header__nav-item {
+                margin: 1rem 0;
+            }
+
+            .header__menu-button {
+                display: block;
+            }
+
+            .hero__title {
+                font-size: 2.5rem;
+            }
+
+            .hero__subtitle {
+                font-size: 1.2rem;
+            }
+
+            .features__title,
+            .characters__title,
+            .gallery__title,
+            .cta-section__title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero__title {
+                font-size: 2rem;
+            }
+
+            .hero__subtitle {
+                font-size: 1rem;
+            }
+
+            .features__grid,
+            .characters__grid,
+            .gallery__grid {
+                grid-template-columns: 1fr;
+            }
+        }

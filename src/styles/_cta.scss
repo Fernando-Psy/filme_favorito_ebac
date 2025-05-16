@@ -1,0 +1,37 @@
+.cta-section {
+    padding: 4rem 1rem;
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('/api/placeholder/1200/600') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+
+    &__container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__description {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: #3498db;
+        color: #fff;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    &__button:hover {
+        background-color: #2980b9;
+    }
+}
